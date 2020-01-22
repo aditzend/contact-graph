@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-us" dir="ltr" hc="noinvert-dim1 kill_background" class=" js flexbox canvas canvastext no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache">
+<!-- <div id="deluminate_fullscreen_workaround" style="position: absolute; top: 0px; left: 0px; width: 1082px; height: 2082px; display: block; z-index: -2147483647; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(0, 0, 0);"></div><div id="deluminate_backdrop" style="position: fixed; top: 0px; left: 0px; height: 100vh; width: 100vw; z-index: -2147483648;"></div> -->
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width'>
+	<meta name='theme-color' content='#aa1e1e'>
+
+	%sapper.base%
+
+	<link rel='manifest' href='manifest.json'>
+	<link rel='icon' type='image/png' href='favicon.png'>
+
+	<!-- Import Ionicon icons & Google Fonts our Bootstrap theme relies on -->
+	<link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Titillium+Web:700|Source+Serif+Pro:400,700|Merriweather+Sans:400,700|Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic,700italic"
+	 rel="stylesheet" type="text/css">
+	<!-- Import the custom Bootstrap 4 theme from our hosted CDN -->
+  <link rel="stylesheet" href="https://www.fedex.com/etc/clientlibs/fedex/commoncore.css">
+  <link href="https://www.fedex.com/wreg/app/styles.09032019_162821.bundle.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.fedex.com/etc.clientlibs/clientlibs/fedex/ooyalaplayer.min.6d1bd2664e19ee982b1d34338f533851.css">
+	<link rel="stylesheet" href="https://www.fedex.com/etc/clientlibs/fedex/components/virtualagent-us.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- Modified styles -->
+	<!-- <link rel="stylesheet" href="/etc.clientlibs/clientlibs/fedex/page/homepage.min.a8fe40bb51a8ce56b95eef1419a27722.css">
+	<link rel="stylesheet" href="/etc.clientlibs/clientlibs/fedex/page/productpage.min.a8fe40bb51a8ce56b95eef1419a27722.css"> -->
+
+
+	<!-- Sapper generates a <style> tag containing critical CSS
+	     for the current page. CSS for the rest of the app is
+	     lazily loaded when it precaches secondary pages -->
+	%sapper.styles%
+
+	<!-- This contains the contents of the <svelte:head> component, if
+	     the current page has one -->
+	%sapper.head%
+</head>
+<body class="fxg-home">
+	<!-- The application will be rendered inside this element,
+	     because `app/client.js` references it -->
+	<div id='sapper'>%sapper.html%</div>
+
+	<!-- Sapper creates a <script> tag containing `app/client.js`
+	     and anything else it needs to hydrate the app and
+	     initialise the router -->
+	%sapper.scripts%
+</body>
+</html>
