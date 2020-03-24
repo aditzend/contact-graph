@@ -8,19 +8,18 @@
 
 	%sapper.base%
 
-	<link rel='manifest' href='manifest.json'>
-	<link rel='icon' type='image/png' href='favicon.png'>
-
-	<!-- Import Ionicon icons & Google Fonts our Bootstrap theme relies on -->
-	<link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
-	<link href="//fonts.googleapis.com/css?family=Titillium+Web:700|Source+Serif+Pro:400,700|Merriweather+Sans:400,700|Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic,700italic"
-	 rel="stylesheet" type="text/css">
-	<!-- Import the custom Bootstrap 4 theme from our hosted CDN -->
-  <link rel="stylesheet" href="https://www.fedex.com/etc/clientlibs/fedex/commoncore.css">
-  <link href="https://www.fedex.com/wreg/app/styles.09032019_162821.bundle.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://www.fedex.com/etc.clientlibs/clientlibs/fedex/ooyalaplayer.min.6d1bd2664e19ee982b1d34338f533851.css">
-	<link rel="stylesheet" href="https://www.fedex.com/etc/clientlibs/fedex/components/virtualagent-us.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  	<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://mitrol.net/assets/fonts/themify-icons/themify-icons.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="https://mitrol.net/assets/vendors/bootstrap4/bootstrap-grid.min.css">
+		<!-- <link rel="stylesheet" type="text/css" href="https://mitrol.net/assets/vendors/bootstrap4/bootstrap-grid.min.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="https://mitrol.net/assets/vendors/bootstrap4/bootstrap-grid.min.css"> -->
+		<!-- App & fonts-->
+		<!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&amp;amp;subset=latin-ext"> -->
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://mitrol.net/assets/css/main.css">
+		<link rel="icon" type="image/png" href="favicon.ico"><!--[if lt IE 9]>
 <!-- Modified styles -->
 	<!-- <link rel="stylesheet" href="/etc.clientlibs/clientlibs/fedex/page/homepage.min.a8fe40bb51a8ce56b95eef1419a27722.css">
 	<link rel="stylesheet" href="/etc.clientlibs/clientlibs/fedex/page/productpage.min.a8fe40bb51a8ce56b95eef1419a27722.css"> -->
@@ -35,10 +34,16 @@
 	     the current page has one -->
 	%sapper.head%
 </head>
-<body class="fxg-home">
+<body>
+  <div class="page-wrap">
+    <div class="md-content">
+	<div id='sapper'>%sapper.html%</div>
+
+    </div>
+
+  </div>
 	<!-- The application will be rendered inside this element,
 	     because `app/client.js` references it -->
-	<div id='sapper'>%sapper.html%</div>
 
 	<!-- Sapper creates a <script> tag containing `app/client.js`
 	     and anything else it needs to hydrate the app and

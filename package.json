@@ -1,9 +1,9 @@
 {
-  "name": "TODO",
-  "description": "TODO",
-  "version": "0.0.1",
+  "name": "o2-front",
+  "description": "orans v2",
+  "version": "1.0.2",
   "scripts": {
-    "dev": "sapper dev",
+    "dev": "sapper dev --port 5000",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build",
@@ -12,9 +12,18 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
+    "@google-cloud/storage": "^4.3.0",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
     "compression": "^1.7.1",
+    "dotenv": "^8.2.0",
+    "express-session": "^1.17.0",
+    "multer": "^1.4.2",
+    "node-fetch": "^2.6.0",
     "polka": "next",
-    "sirv": "^0.4.0"
+    "session-file-store": "^1.4.0",
+    "sirv": "^0.4.0",
+    "sveltestrap": "^3.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -32,6 +41,6 @@
     "rollup-plugin-svelte": "^5.0.1",
     "rollup-plugin-terser": "^4.0.4",
     "sapper": "^0.27.0",
-    "svelte": "^3.0.0"
+    "svelte": "^3.18.2"
   }
 }
